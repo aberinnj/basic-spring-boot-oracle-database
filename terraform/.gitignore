@@ -1,0 +1,9 @@
+# Database
+wallet
+*.zip
+
+# Terraform State
+*.tfstate
+*.backup
+*.hcl
+.terraform
