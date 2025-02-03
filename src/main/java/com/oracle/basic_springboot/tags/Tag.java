@@ -15,8 +15,23 @@ public class Tag {
   @Column(name = "Color")
   private String color;
 
-  // Constructor
-  public void Tag(int id, String name, String color) {
+  public Tag() {}
+
+  public Tag(String name) {
+    this.name = name;
+  }
+
+  public Tag(String name, String color) {
+    this.name = name;
+    this.color = color;
+  }
+
+  public Tag(int id, String name) {
+    this.id = id;
+    this.name = name;
+  }
+
+  public Tag(int id, String name, String color) {
     this.id = id;
     this.name = name;
     this.color = color;
