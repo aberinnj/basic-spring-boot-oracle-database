@@ -7,16 +7,16 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@RestController // 1
-@RequestMapping(path= "/api/v1/tags") // 2
+@RestController
+@RequestMapping(path= "/api/v1/tags")
 public class TagController {
 
-  @Autowired // 3
+  @Autowired
   private TagRepository repository;
 
-  @GetMapping // 4
+  @GetMapping
   public List<Tag> getTags() {
-    return repository.findAll(); // 5
+    return repository.findAll();
   }
 
 }

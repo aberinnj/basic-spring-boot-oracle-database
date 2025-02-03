@@ -2,17 +2,17 @@ package com.oracle.basic_springboot.tags;
 
 import jakarta.persistence.*;
 
-@Entity // 1
-@Table(name="Tags") // 2
+@Entity
+@Table(name="Tags")
 public class Tag {
 
-  @Id @GeneratedValue(strategy = GenerationType.IDENTITY) // 3
+  @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
   private int id;
 
-  @Column(name = "Name") // 4
+  @Column(name = "Name")
   private String name;
 
-  @Column(name = "Color") // 5
+  @Column(name = "Color")
   private String color;
 
   // Constructor
