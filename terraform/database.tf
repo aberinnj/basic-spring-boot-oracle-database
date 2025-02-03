@@ -14,7 +14,7 @@ resource "oci_database_autonomous_database" "autonomous_database" {
   is_auto_scaling_enabled                        = "true"
   is_auto_scaling_for_storage_enabled            = "true"
   compute_model                                  = "ECPU"
-  cpu_core_count                                 = "2"
+  compute_count                                  = "2"
   data_storage_size_in_tbs                       = "1"
   license_model                                  = "LICENSE_INCLUDED"
   is_preview_version_with_service_terms_accepted = "false"
