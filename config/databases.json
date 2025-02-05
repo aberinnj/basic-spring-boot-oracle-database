@@ -1,0 +1,23 @@
+{
+  "my-adb": {
+    "connect_descriptor": "<connection_string>",
+    "user": "TAGOWNER",
+    "password": {
+      "type": "base64",
+      "value": "<binary-data>"
+    },
+    "wallet_location": {
+      "type": "base64",
+      "value": "<binary-data>"
+    }
+  },
+
+  "my-freedb": {
+    "connect_descriptor": "localhost:1521/FREEPDB1",
+    "user": "TAGOWNER",
+    "password": {
+      "type": "base64",
+      "value": "<binary-data>"
+    }
+  }
+}
